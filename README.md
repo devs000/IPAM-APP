@@ -9,3 +9,10 @@
 
 - j'ai configuré l'application pour être déployée sur Kubernetes. J'ai créé deux fichiers de configuration : deployment.yaml et service.yaml. En utilisant Minikube pour mon cluster Kubernetes local, j'ai appliqué ces fichiers pour orchestrer l'application dans Kubernetes.
 - L'application est  déployée et fonctionne correctement dans cet environnement.
+
+![Interface web](static/img/interface-web.png)
+
+![Termina docker images et container](static/img/docker-ps-images.png)
+
+![Terminal de pods, services ,deployment k8s](static/img/terminal-kube.png)
+

@@ -13,12 +13,6 @@
             "password": "password456"
         },
         {
-            "ip": "192.168.1.33",
-            "hostname": "host3",
-            "username": "izan",
-            "password": "izan"
-        },
-        {
             "ip": "123.33.443.2",
             "hostname": "eeeee",
             "username": "eeeee",
