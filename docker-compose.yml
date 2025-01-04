@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  web:
+    image: ipam/manager:1.0.0
+    container_name: ipam-app
+    ports:
+      - "5001:5000"
+    volumes:
+      - .:/app
+      - ./data:/app/data
+    environment:
+      - FLASK_ENV=development
+    command: python app.py

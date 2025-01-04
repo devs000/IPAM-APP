@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ipam-app
+  labels:
+    app: ipam-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ipam-app
+  template:
+    metadata:
+      labels:
+        app: ipam-app
+    spec:
+      containers:
+        - name: ipam-app
+          image: ipam/manager:1.0.0  
+          ports:
+            - containerPort: 5000
+          env:
+            - name: FLASK_ENV
+              value: "development"
+          volumeMounts:
+            - name: app-data
+              mountPath: /app/data
+      volumes:
+        - name: app-data
+          hostPath:
+            path: /data

@@ -1,0 +1,16 @@
+---
+- name: Gestion des entrées IPAM
+  hosts: localhost
+  tasks:
+    - name: add infos  IPAM
+      ipam:
+        api_url: "http://127.0.0.1:5000"
+        ip: "192.168.1.11"
+        hostname: "server10"
+        username: "admin10"
+        password: "password10"
+      register: result
+
+    - name: show result
+      debug:
+        var: result

@@ -1,0 +1,7 @@
+# Ignorer les dossiers ansible et kube
+ansible_ipam_module/
+kube/
+
+# Ignorer d'autres fichiers ou dossiers si nécessaire
+.git/
+.env
